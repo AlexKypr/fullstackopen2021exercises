@@ -1,0 +1,12 @@
+title 0.6 Exercise
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: {"message":"note created"}
+
+note over browser:
+Browser executes the event handler
+that renders notes to display through
+the redrawNotes() function.
+This actually happens before the HTTP POST
+when the Save button is pressed.
+end note
